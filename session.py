@@ -28,8 +28,8 @@ thr2 = Thread(target=recvMsgThread)
 thr2.start()
 thr1.start()
 
-print("sending payload 1...")
 while True:
+	print("sending payload 1...")
 	#raw = "02 02 00 00 0c 00 00 00  01 00 00 00 10 01 00 00 20 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 08 00 00 00 e9 44 17 2c a8 f6 13 fd".replace(" ", "")
 	raw = "02 02 00 00 0c 00 00 00  01 00 00 00 10 01 00 00 20 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 08 00 00 00 ff ff ff ff ff ff ff ff".replace(" ", "")
 	print(raw)
